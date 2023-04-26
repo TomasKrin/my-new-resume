@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const MyProjects = () => {
+const Contacts = () => {
   return (
     <motion.div
       animate={{ opacity: 1 }}
@@ -8,9 +8,9 @@ const MyProjects = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
     >
-      <div>MyProjects</div>
+      <div>Contacts</div>
     </motion.div>
   );
 };
 
-export default MyProjects;
+export default Contacts;
