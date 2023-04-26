@@ -1,9 +1,11 @@
 import { PropsWithChildren } from "react";
+import TopBar from "../components/TopBar/TopBar";
 import styled from "styled-components";
 
 const Layout = ({ children }: PropsWithChildren) => {
   return (
     <Wrapper>
+      <TopBar />
       <Container>
         <Content>{children}</Content>
       </Container>
@@ -13,13 +15,11 @@ const Layout = ({ children }: PropsWithChildren) => {
 
 export default Layout;
 
-const Wrapper = styled.div`
-  padding-top: 60px;
-  padding-bottom: 60px;
-  position: relative;
-`;
+const Wrapper = styled.div``;
 
 const Container = styled.div`
+  margin-top: 24px;
+  padding: 16px 36px;
   display: flex;
   position: relative;
 `;
