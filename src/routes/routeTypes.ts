@@ -1,7 +1,7 @@
 import { PropsWithChildren } from "react";
 
 type MainRoute = {
-  path: "/" | "/projects";
+  path: "/" | "/projects" | "/about" | "/contacts";
   Component: () => JSX.Element;
 };
 
